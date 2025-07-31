@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>AOI.kml</name>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>80ffffff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>80ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>80ffffff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>80ffffff</color>
+		</PolyStyle>
+	</Style>
+	<Placemark>
+		<name>AOI Peninisula Seismicity</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-122.4676938114473,37.64705914976427,0 -122.408671432299,37.5779632290928,0 -122.3449132632959,37.50297618146882,0 -122.2784562930702,37.43265645464797,0 -122.2159878845763,37.36734497863333,0 -122.1700866994744,37.31571746469464,0 -122.1020196954137,37.26780431925621,0 -122.030314868727,37.20253697171645,0 -121.9504574509428,37.13794113466183,0 -121.8955840118016,37.09783031189629,0 -121.8370803015047,37.06449251716317,0 -121.7784085908795,37.03262664531508,0 -121.7151402391045,36.97616345371489,0 -121.6426941717565,36.92520994996642,0 -121.5826935393254,36.8831084019272,0 -121.5001904053145,36.82627929661276,0 -121.4652206551076,36.87915310165079,0 -121.5507889869646,37.00544507531632,0 -121.648846456598,37.13084322631725,0 -121.7888874113922,37.22166045822964,0 -121.9242571544903,37.29002683317479,0 -122.0682385705566,37.37921104251754,0 -122.1723073357276,37.44584208147992,0 -122.2947093173602,37.5209379409314,0 -122.4449175366308,37.64522661993344,0 -122.4676938114473,37.64705914976427,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>
