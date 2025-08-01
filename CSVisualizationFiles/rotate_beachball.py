@@ -195,21 +195,3 @@ def vector_from_trend_plunge(trend, plunge=0):
     v_east = np.sin(trend_rad) * np.cos(plunge_rad)
     v_down = np.sin(plunge_rad)
     return np.array([v_north, v_east, v_down])
-strike = 315
-dip = 60
-rake = 90
-v = np.array([1, 1, 0])
-theta = 90  # rotation angle in degrees - gets into cross-sectional view.
-mt_rotated = rotate_moment_tensor(strike, dip, rake, v, theta, use_upper_hemisphere=True)
-fig = plt.figure()
-ax = plt.gca()
-ball1 = beach(mt_rotated, xy=(0, 0), width=3,
-              facecolor='lightgray', edgecolor='black', linewidth=2)
-ax.add_collection(ball1)
-ax.set_xlim(-2, 2)
-ax.set_ylim(-2, 2)
-ax.set_aspect('equal')
-ax.set_xlabel('East')
-ax.set_ylabel('North')
-ax.grid(True, alpha=0.3)
-plt.show()
